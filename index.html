@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mad Cad: AI assistant for your CAD program</title>
+<meta name="description" content="Mad Cad is a small always-on-top panel that lets an AI assistant read your drawings and build or check parts in your own CAD program: FreeCAD, Autodesk Fusion, KiCad or SOLIDWORKS. Prepaid credit, no subscription.">
+<style>
+:root{--bg:#14161a;--panel:#1c1f26;--line:#2a2f3a;--text:#e8eaf0;--muted:#9aa3b2;--accent:#f0a500;--accent2:#ffcb47}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent2)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:22px 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:22px;letter-spacing:.3px}.logo b{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:15px}nav a:hover{color:var(--text)}
+.hero{padding:64px 0 40px}
+.hero h1{font-size:40px;line-height:1.15;margin:0 0 14px}
+.hero p{font-size:19px;color:var(--muted);max-width:640px;margin:0 0 24px}
+.btn{display:inline-block;background:var(--accent);color:#1a1300;font-weight:700;padding:12px 20px;border-radius:10px;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line);margin-left:10px}
+.tags{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap}
+.tag{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:14px;color:var(--muted)}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 8px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:15px}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ol.steps li{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px 16px 60px;position:relative;color:var(--muted)}
+ol.steps li b{color:var(--text)}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:18px;top:14px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#1a1300;font-weight:800;display:flex;align-items:center;justify-content:center}
+table{width:100%;border-collapse:collapse;margin-top:8px}
+td,th{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--muted);font-weight:600;font-size:14px}
+.note{color:var(--muted);font-size:14px;margin-top:10px}
+footer{padding:32px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer p{margin:6px 0}
+@media (max-width:600px){.hero h1{font-size:30px}.btn.ghost{margin-left:0;margin-top:10px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo"><b>Mad</b>Cad</div>
+  <nav><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#privacy">Privacy</a><a href="terms.html">Terms</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <h1>An AI assistant that works inside your own CAD program</h1>
+  <p>Mad Cad is a small panel that stays on top of your screen. Give it a drawing, a photo or a sketch with sizes, tell it what you need, and it reads, builds and checks the part in FreeCAD, Autodesk Fusion, KiCad or SOLIDWORKS on your PC, inside one job folder you choose.</p>
+  <a class="btn" href="#contact">Get access</a><a class="btn ghost" href="#how">See how it works</a>
+  <div class="tags"><span class="tag">FreeCAD</span><span class="tag">Autodesk Fusion</span><span class="tag">KiCad</span><span class="tag">SOLIDWORKS (early access)</span><span class="tag">Windows 10 / 11</span></div>
+</div></div>
+
+<section><div class="wrap">
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card"><h3>Reads drawings properly</h3><p>Renders the PDF, measures the drawn lines against the printed dimensions, reads the title block, and asks when a size is missing instead of guessing.</p></div>
+    <div class="card"><h3>Builds in your CAD program</h3><p>Writes and runs the scripts that create the part, the sheet, the assembly or the circuit board, then checks the result and fixes its own mistakes.</p></div>
+    <div class="card"><h3>Checks before you cut</h3><p>Reports sizes, mass, clearances and design-rule results in plain words with tick boxes, so you can confirm before anything is printed, cut or ordered.</p></div>
+    <div class="card"><h3>Knows the traps</h3><p>It carries a knowledge pack of real workshop lessons: profile tables, scan scales, thread and hole rules, sheet-metal bends, PCB routing habits.</p></div>
+    <div class="card"><h3>Stays in its lane</h3><p>It can only read and write inside the job folder you pick, and it asks before it runs a script or program. You can switch the asking off per chat.</p></div>
+    <div class="card"><h3>Your files stay with you</h3><p>Your drawings never leave your PC except for the parts the AI must read to do the job. The server keeps no chats and no files.</p></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><b>Install the panel.</b> One small program, MadCad.exe. No install wizard, no admin rights. Create an account with your e-mail.</li>
+    <li><b>Pick your CAD program and a job folder.</b> Mad Cad checks which programs it can find on your PC and tells you where to get the free ones.</li>
+    <li><b>Add your drawing and say what you need.</b> Click + Add or drop the files on the panel. Then: "build this bracket", "check this board", "give me a cut list".</li>
+    <li><b>Allow, answer, confirm.</b> Yellow cards ask before a script runs, green cards ask you the questions only you can answer. The result lands in your job folder and in your CAD program.</li>
+  </ol>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <h2>Pricing: prepaid credit, no subscription</h2>
+  <p>You buy credit by card and each answer uses a little of it, depending on how much the AI had to read and write. The amount is shown after every answer, and the balance always sits at the top of the panel. New accounts start with a small free credit so you can try it first.</p>
+  <table>
+    <tr><th>Credit pack</th><th>Price</th><th>Roughly</th></tr>
+    <tr><td>Starter</td><td>R100</td><td>a handful of parts read and built from drawings</td></tr>
+    <tr><td>Workshop</td><td>R250</td><td>a week of regular use for one person</td></tr>
+    <tr><td>Studio</td><td>R500</td><td>larger assemblies and boards, longer sessions</td></tr>
+    <tr><td>Shop</td><td>R1000</td><td>a small team or a busy month</td></tr>
+  </table>
+  <p class="note">Prices in South African rand, excluding VAT. Card payments are handled by Paystack. Unused credit can be refunded within 14 days of purchase; see the <a href="terms.html">terms</a>. The usage figures are indications: a short question costs under one rand, a complex assembly built and checked from a multi-sheet drawing can cost tens of rand.</p>
+</div></section>
+
+<section id="privacy"><div class="wrap">
+  <h2>Privacy and safety</h2>
+  <div class="grid">
+    <div class="card"><h3>What leaves your PC</h3><p>What you type, the files Mad Cad reads for the job, and the results of the scripts it runs, sent to the AI provider through our server so the AI can answer. Under the business terms we use, the AI provider does not train on it.</p></div>
+    <div class="card"><h3>What the server keeps</h3><p>Your e-mail address, your credit balance and usage, token counts per answer, and payment references. Not your chats, not your drawings, not your files.</p></div>
+    <div class="card"><h3>Your CAD licence</h3><p>FreeCAD and KiCad are free. Fusion and SOLIDWORKS need your own licence. Mad Cad never installs, unlocks or activates a paid CAD program.</p></div>
+    <div class="card"><h3>A tool, not an engineer</h3><p>The AI can be wrong. Mad Cad shows its work and asks for confirmation, and you check every size before you cut, print or order.</p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Get access</h2>
+  <p>Mad Cad is in its first release and we are taking on customers one at a time, so we can watch the first jobs with you. Send an e-mail with your CAD program and what you build, and we send you the panel and your first credit.</p>
+  <p><a class="btn" href="mailto:info@fanna.org?subject=Mad%20Cad%20access">E-mail info@fanna.org</a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p><b>Mad Cad</b> is made by Polytimos, Midrand, South Africa. Contact: <a href="mailto:info@fanna.org">info@fanna.org</a>. <a href="terms.html">Terms of use, privacy and refunds</a>.</p>
+  <p>SOLIDWORKS is a trademark of Dassault Systèmes. Autodesk and Fusion are trademarks of Autodesk, Inc. KiCad and FreeCAD are trademarks of their respective owners. Mad Cad is an independent product and is not affiliated with or endorsed by them.</p>
+</div></footer>
+</body>
+</html>
