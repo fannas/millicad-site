@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mad Cad: first run</title>
-<meta name="description" content="How to download Mad Cad, get past the Windows warning, create your account and do your first job.">
+<title>Milli Cad: first run</title>
+<meta name="description" content="How to download Milli Cad, get past the Windows warning, create your account and do your first job.">
 <style>
 :root{--bg:#14161a;--panel:#1c1f26;--line:#2a2f3a;--text:#e8eaf0;--muted:#9aa3b2;--accent:#f0a500;--accent2:#ffcb47}
 *{box-sizing:border-box}
@@ -25,30 +25,30 @@ table{width:100%;border-collapse:collapse;margin-top:8px} td{padding:8px 10px;bo
 </style>
 </head>
 <body><div class="wrap">
-<a class="back" href="index.html">&larr; Mad Cad</a>
+<a class="back" href="index.html">&larr; Milli Cad</a>
 <h1>First run</h1>
 <p class="muted">From download to your first finished part, about ten minutes. Windows 10 or 11, 64-bit. No installer and no admin rights needed.</p>
 
 <h2>1. Download and start it</h2>
 <ol>
-  <li><b>Download MadCad.exe.</b> <a class="btn" href="https://github.com/fannas/madcad-site/releases/latest/download/MadCad.exe">Download MadCad.exe</a> <span class="muted">(about 44 MB)</span>. Save it somewhere you will find it again, for example a folder called Mad Cad in Documents.</li>
+  <li><b>Download MilliCad.exe.</b> <a class="btn" href="https://github.com/fannas/millicad-site/releases/latest/download/MilliCad.exe">Download MilliCad.exe</a> <span class="muted">(about 45 MB)</span>. Save it somewhere you will find it again, for example a folder called Milli Cad in Documents.</li>
   <li><b>Double-click it.</b> The first start takes a few seconds while it unpacks.</li>
   <li><b>If Windows shows a blue box "Windows protected your PC":</b> click the small <b>More info</b> link, then the <b>Run anyway</b> button. This appears because the program is new and not yet code-signed; see the note below.</li>
 </ol>
-<div class="warn"><b>About the Windows warning.</b> Windows SmartScreen warns about any program it has not seen often, signed or not. Mad Cad is a single file that stores its settings in your Windows profile and never asks for admin rights. If you want to check the download, its SHA-256 checksum is on the <a href="index.html#download">download section</a> of the main page; in PowerShell, <code>Get-FileHash MadCad.exe</code> shows yours.</div>
+<div class="warn"><b>About the Windows warning.</b> Windows SmartScreen warns about any program it has not seen often, signed or not. Milli Cad is a single file that stores its settings in your Windows profile and never asks for admin rights. If you want to check the download, its SHA-256 checksum is on the <a href="index.html#download">download section</a> of the main page; in PowerShell, <code>Get-FileHash MilliCad.exe</code> shows yours.</div>
 
 <h2>2. Create your account</h2>
 <ol>
   <li><b>Type your e-mail and a password</b> of at least 8 characters, tick that you agree to the <a href="terms.html">terms</a>, click <b>Create account</b>.</li>
-  <li><b>Open the mail</b> from noreply@stefan-ai-fanna.firebaseapp.com (check spam) and click its link. Then click <b>I have clicked the link</b> in Mad Cad.</li>
+  <li><b>Open the mail</b> from noreply@stefan-ai-fanna.firebaseapp.com (check spam) and click its link. Then click <b>I have clicked the link</b> in Milli Cad.</li>
   <li><b>You are in.</b> New accounts start with a small free credit; the amber number at the top is what you have left.</li>
 </ol>
 
 <h2>3. Set it up</h2>
 <ol>
   <li><b>Click the gear</b> (top right).</li>
-  <li><b>Pick your CAD program</b>: FreeCAD, Autodesk Fusion, KiCad or SOLIDWORKS. Pick None if you only want drawings read.</li>
-  <li><b>Pick a job folder.</b> Mad Cad can only read and write inside this folder. One folder per project works well.</li>
+  <li><b>Pick your CAD program</b>: FreeCAD, F3D CAD, KiCad or SLDPRT CAD. Pick None if you only want drawings read.</li>
+  <li><b>Pick a job folder.</b> Milli Cad can only read and write inside this folder. One folder per project works well.</li>
   <li><b>Look at the setup check.</b> It lists which programs it found on your PC and where to get the free ones (FreeCAD, KiCad, Java and Freerouting for boards).</li>
   <li><b>Back to chat.</b></li>
 </ol>
@@ -58,13 +58,13 @@ table{width:100%;border-collapse:collapse;margin-top:8px} td{padding:8px 10px;bo
   <li><b>Add your drawing.</b> Click <b>+ Add</b> under the typing box and pick the PDF, photo or file, or drop it on the window. It is copied into the job folder.</li>
   <li><b>Say what you want.</b> For example: "Read this drawing and give me the sizes", or "Build this bracket in FreeCAD and tell me its mass".</li>
   <li><b>Allow and answer.</b> A yellow card asks before a script or program runs; a green card asks you anything only you know. Grey lines show what it is doing.</li>
-  <li><b>Check the result</b> in your job folder and your CAD program before you cut, print or order. Mad Cad shows its work; you make the call.</li>
+  <li><b>Check the result</b> in your job folder and your CAD program before you cut, print or order. Milli Cad shows its work; you make the call.</li>
 </ol>
 
 <h2>Where things are</h2>
 <table>
-  <tr><td>Your work</td><td>The job folder you chose. Scripts Mad Cad ran and their logs are in its <code>madcad_runs</code> sub-folder.</td></tr>
-  <tr><td>Settings and saved chats</td><td><code>%APPDATA%\MadCad</code> on this PC only. Nothing of your chats is stored on the server.</td></tr>
+  <tr><td>Your work</td><td>The job folder you chose. Scripts Milli Cad ran and their logs are in its <code>millicad_runs</code> sub-folder.</td></tr>
+  <tr><td>Settings and saved chats</td><td><code>%APPDATA%\MilliCad</code> on this PC only. Nothing of your chats is stored on the server.</td></tr>
   <tr><td>Credit</td><td>Click the amber number for usage and top-ups (R100 to R1000 by card through Paystack).</td></tr>
   <tr><td>Buttons</td><td>+ new chat, pin keeps it on top, Aa text size (also Ctrl + and Ctrl -), gear settings, minus minimises.</td></tr>
   <tr><td>Model</td><td>Leave the box next to Send on <b>Best (CAD)</b>. Quick is cheaper but only for simple questions.</td></tr>
@@ -72,5 +72,5 @@ table{width:100%;border-collapse:collapse;margin-top:8px} td{padding:8px 10px;bo
 </table>
 
 <h2>Uninstall</h2>
-<p class="muted">Delete MadCad.exe and, if you want, the folder <code>%APPDATA%\MadCad</code>. Your job folders stay. To close your account and have your data removed, e-mail us from the account's address.</p>
+<p class="muted">Delete MilliCad.exe and, if you want, the folder <code>%APPDATA%\MilliCad</code>. Your job folders stay. To close your account and have your data removed, e-mail us from the account's address.</p>
 </div></body></html>

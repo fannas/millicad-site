@@ -30,7 +30,7 @@ while i < len(lines):
 
 page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mad Cad: terms of use, privacy and refunds</title>
+<title>Milli Cad: terms of use, privacy and refunds</title>
 <style>
 :root{{--bg:#14161a;--text:#e8eaf0;--muted:#9aa3b2;--accent:#f0a500;--line:#2a2f3a}}
 body{{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}}
@@ -39,9 +39,9 @@ a{{color:#ffcb47}} h1{{font-size:28px;margin:10px 0 6px}} h2{{font-size:19px;mar
 p,li{{color:var(--text)}} .back{{display:inline-block;margin-bottom:10px;color:var(--muted);text-decoration:none}}
 hr{{border:0;border-top:1px solid var(--line);margin:30px 0}} .foot{{color:var(--muted);font-size:14px}}
 </style></head><body><div class="wrap">
-<a class="back" href="index.html">&larr; Mad Cad</a>
+<a class="back" href="index.html">&larr; Milli Cad</a>
 {chr(10).join(out)}
-<hr><p class="foot">Mad Cad is made by Polytimos, Midrand, South Africa. Contact: <a href="mailto:info@fanna.org">info@fanna.org</a>.</p>
+<hr><p class="foot">Milli Cad is made by Polytimos, Midrand, South Africa. Contact: <a href="mailto:info@fanna.org">info@fanna.org</a>.</p>
 </div></body></html>
 """
 (here / "terms.html").write_text(page, encoding="utf-8")
